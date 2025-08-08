@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio — Cagar en la calle</title>
+  <meta name="description" content="Desarrollador(a) web. Creo experiencias digitales modernas y de alto rendimiento." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#inicio">LacrimosaCJ<span class="accent">.</span></a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <button id="theme-toggle" class="icon-btn" aria-label="Cambiar a tema oscuro">
+            <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4V2M12 22v-2M4.93 4.93 3.52 3.52M20.48 20.48l-1.41-1.41M4 12H2m20 0h-2M4.93 19.07l-1.41 1.41M20.48 3.52l-1.41 1.41M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">Disponible para proyectos</p>
+        <h1>Construyo interfaces web modernas y accesibles</h1>
+        <p class="sub">Desarrollador(a) Frontend/Full‑Stack con enfoque en rendimiento, UX y buenas prácticas.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contacto">Contáctame</a>
+          <a class="btn ghost" href="#proyectos">Ver proyectos</a>
+        </div>
+        <div class="socials">
+          <a aria-label="GitHub" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a aria-label="LinkedIn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a aria-label="CV" href="#" target="_blank" rel="noreferrer">CV</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="avatar">
+          <img src="assets/avatar.jpg" alt="Foto de Tu Nombre" />
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section container">
+      <h2>Proyectos destacados</h2>
+      <div class="grid projects">
+        <article class="card">
+          <img src="assets/proyecto-1.jpg" alt="Proyecto 1" loading="lazy" />
+          <div class="card-body">
+            <h3>Proyecto 1</h3>
+            <p>Aplicación web responsiva con autenticación y panel de control.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/proyecto-2.jpg" alt="Proyecto 2" loading="lazy" />
+          <div class="card-body">
+            <h3>Proyecto 2</h3>
+            <p>Landing de marketing optimizada para conversión y SEO.</p>
+            <ul class="tags">
+              <li>SEO</li><li>UI</li><li>Accesibilidad</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section container">
+      <h2>Sobre mí</h2>
+      <div class="about">
+        <p>Soy desarrollador(a) con 1000 años de experiencia creando productos digitales. Me apasiona convertir ideas en experiencias limpias, rápidas y accesibles.</p>
+        <ul class="badges">
+          <li>React</li><li>TypeScript</li><li>Node.js</li><li>UI/UX</li><li>Testing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="section container">
+      <h2>Contacto</h2>
+      <form id="contact-form" class="form" novalidate>
+        <div class="field">
+          <label for="nombre">LacrimosaCJ</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="field">
+          <label for="email">lacrimosa2077@gmail.com</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="field">
+          <label for="mensaje">???????????</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+        </div>
+        <button class="btn primary" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> LacrimosaCJ</span>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
